@@ -1,9 +1,0 @@
-**/node_modules
-**/dist
-**/docs
-**/vscode
-**/package.json
-**/yarn.lock
-**/package-lock.json
-**/.eslintrc.js
-docs/api
