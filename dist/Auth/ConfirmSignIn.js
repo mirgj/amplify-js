@@ -90,9 +90,10 @@ var ConfirmSignIn = /*#__PURE__*/function (_AuthPiece) {
 
       return /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Wrapper, null, /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.section
-      }, /*#__PURE__*/_react["default"].createElement(_reactNative.View, null, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, _extends({
-        theme: theme
-      }, (0, _Utils.setTestId)(_AmplifyTestIDs["default"].AUTH.CONFIRM_SIGN_IN_TEXT)), _awsAmplify.I18n.get('Confirm Sign In')), /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
+      }, /*#__PURE__*/_react["default"].createElement(_reactNative.View, null, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, {
+        theme: theme,
+        id: _AmplifyTestIDs["default"].AUTH.CONFIRM_SIGN_IN_TEXT
+      }, _awsAmplify.I18n.get('Confirm Sign In')), /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.sectionBody
       }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.FormField, _extends({
         theme: theme,
@@ -111,12 +112,13 @@ var ConfirmSignIn = /*#__PURE__*/function (_AuthPiece) {
         disabled: !this.state.code
       }, (0, _Utils.setTestId)(_AmplifyTestIDs["default"].AUTH.CONFIRM_BUTTON)))), /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.sectionFooter
-      }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.LinkCell, _extends({
+      }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.LinkCell, {
         theme: theme,
         onPress: function onPress() {
           return _this3.changeState('signIn');
-        }
-      }, (0, _Utils.setTestId)(_AmplifyTestIDs["default"].AUTH.BACK_TO_SIGN_IN_BUTTON)), _awsAmplify.I18n.get('Back to Sign In'))), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.ErrorRow, {
+        },
+        id: _AmplifyTestIDs["default"].AUTH.BACK_TO_SIGN_IN_BUTTON
+      }, _awsAmplify.I18n.get('Back to Sign In'))), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.ErrorRow, {
         theme: theme
       }, this.state.error)), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.SignedOutMessage, this.props)));
     }

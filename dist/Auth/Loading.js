@@ -19,11 +19,7 @@ var _AmplifyUI = require("../AmplifyUI");
 
 var _AmplifyTestIDs = _interopRequireDefault(require("../AmplifyTestIDs"));
 
-var _Utils = require("../Utils");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -65,9 +61,10 @@ var Loading = /*#__PURE__*/function (_AuthPiece) {
     value: function showComponent(theme) {
       return /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.section
-      }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, _extends({
-        theme: theme
-      }, (0, _Utils.setTestId)(_AmplifyTestIDs["default"].AUTH.LOADING_TEXT)), _awsAmplify.I18n.get('Loading...')));
+      }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, {
+        theme: theme,
+        id: _AmplifyTestIDs["default"].AUTH.LOADING_TEXT
+      }, _awsAmplify.I18n.get('Loading...')));
     }
   }]);
 
