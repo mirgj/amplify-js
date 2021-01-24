@@ -109,7 +109,7 @@ var SignIn = /*#__PURE__*/function (_AuthPiece) {
         style: theme.section
       }, /*#__PURE__*/_react["default"].createElement(_reactNative.View, null, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, {
         theme: theme,
-        id: _AmplifyTestIDs["default"].AUTH.SIGN_IN_TO_YOUR_ACCOUNT_TEXT
+        testID: _AmplifyTestIDs["default"].AUTH.SIGN_IN_TO_YOUR_ACCOUNT_TEXT
       }, _awsAmplify.I18n.get('Sign in to your account')), /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.sectionBody
       }, this.renderUsernameField(theme), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.FormField, _extends({
@@ -135,13 +135,13 @@ var SignIn = /*#__PURE__*/function (_AuthPiece) {
         onPress: function onPress() {
           return _this3.changeState('forgotPassword');
         },
-        id: _AmplifyTestIDs["default"].AUTH.FORGOT_PASSWORD_BUTTON
+        testID: _AmplifyTestIDs["default"].AUTH.FORGOT_PASSWORD_BUTTON
       }, _awsAmplify.I18n.get('Forgot Password')), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.LinkCell, {
         theme: theme,
         onPress: function onPress() {
           return _this3.changeState('signUp');
         },
-        id: _AmplifyTestIDs["default"].AUTH.SIGN_UP_BUTTON
+        testID: _AmplifyTestIDs["default"].AUTH.SIGN_UP_BUTTON
       }, _awsAmplify.I18n.get('Sign Up'))), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.ErrorRow, {
         theme: theme
       }, this.state.error)), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.SignedOutMessage, this.props)));

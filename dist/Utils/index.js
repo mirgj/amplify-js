@@ -9,7 +9,6 @@ var _reactNative = require("react-native");
 
 var setTestId = function setTestId(id) {
   return _reactNative.Platform.OS === 'android' ? {
-    accessible: true,
     accessibilityLabel: id
   } : {
     testID: id

@@ -170,7 +170,7 @@ var LinkCell = function LinkCell(props) {
   }, /*#__PURE__*/_react["default"].createElement(_reactNative.TouchableHighlight, _extends({
     onPress: props.onPress,
     underlayColor: _AmplifyTheme.linkUnderlayColor
-  }, (0, _Utils.setTestId)(props.id), {
+  }, (0, _Utils.setTestId)(props.testID), {
     disabled: disabled
   }), /*#__PURE__*/_react["default"].createElement(_reactNative.Text, {
     style: disabled ? theme.sectionFooterLinkDisabled : theme.sectionFooterLink
@@ -185,7 +185,7 @@ var Header = function Header(props) {
     style: theme.sectionHeader
   }, /*#__PURE__*/_react["default"].createElement(_reactNative.Text, _extends({
     style: theme.sectionHeaderText
-  }, (0, _Utils.setTestId)(props.id)), props.children));
+  }, (0, _Utils.setTestId)(props.testID)), props.children));
 };
 
 exports.Header = Header;

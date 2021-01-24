@@ -63,7 +63,7 @@ var Loading = /*#__PURE__*/function (_AuthPiece) {
         style: theme.section
       }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, {
         theme: theme,
-        id: _AmplifyTestIDs["default"].AUTH.LOADING_TEXT
+        testID: _AmplifyTestIDs["default"].AUTH.LOADING_TEXT
       }, _awsAmplify.I18n.get('Loading...')));
     }
   }]);

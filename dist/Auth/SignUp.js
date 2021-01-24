@@ -262,7 +262,7 @@ var SignUp = /*#__PURE__*/function (_AuthPiece) {
         style: theme.sectionScroll
       }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, {
         theme: theme,
-        id: _AmplifyTestIDs["default"].AUTH.SIGN_UP_TEXT
+        testID: _AmplifyTestIDs["default"].AUTH.SIGN_UP_TEXT
       }, _awsAmplify.I18n.get(this.header)), /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.sectionBody
       }, this.signUpFields.map(function (field) {
@@ -307,13 +307,13 @@ var SignUp = /*#__PURE__*/function (_AuthPiece) {
         onPress: function onPress() {
           return _this4.changeState('confirmSignUp');
         },
-        id: _AmplifyTestIDs["default"].AUTH.CONFIRM_A_CODE_BUTTON
+        testID: _AmplifyTestIDs["default"].AUTH.CONFIRM_A_CODE_BUTTON
       }, _awsAmplify.I18n.get('Confirm a Code')), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.LinkCell, {
         theme: theme,
         onPress: function onPress() {
           return _this4.changeState('signIn');
         },
-        id: _AmplifyTestIDs["default"].AUTH.SIGN_IN_BUTTON
+        testID: _AmplifyTestIDs["default"].AUTH.SIGN_IN_BUTTON
       }, _awsAmplify.I18n.get('Sign In'))), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.ErrorRow, {
         theme: theme
       }, this.state.error), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.SignedOutMessage, this.props)));

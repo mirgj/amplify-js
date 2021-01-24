@@ -121,7 +121,7 @@ var RequireNewPassword = /*#__PURE__*/function (_AuthPiece) {
         style: theme.sectionScroll
       }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, {
         theme: theme,
-        id: _AmplifyTestIDs["default"].AUTH.CHANGE_PASSWORD_TEXT
+        testID: _AmplifyTestIDs["default"].AUTH.CHANGE_PASSWORD_TEXT
       }, _awsAmplify.I18n.get('Change Password')), /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.sectionBody
       }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.FormField, _extends({
@@ -150,7 +150,7 @@ var RequireNewPassword = /*#__PURE__*/function (_AuthPiece) {
         onPress: function onPress() {
           return _this4.changeState('signIn');
         },
-        id: _AmplifyTestIDs["default"].AUTH.BACK_TO_SIGN_IN_BUTTON
+        testID: _AmplifyTestIDs["default"].AUTH.BACK_TO_SIGN_IN_BUTTON
       }, _awsAmplify.I18n.get('Back to Sign In'))), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.ErrorRow, {
         theme: theme
       }, this.state.error), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.SignedOutMessage, this.props)));

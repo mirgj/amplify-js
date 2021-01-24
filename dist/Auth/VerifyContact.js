@@ -219,7 +219,7 @@ var VerifyContact = /*#__PURE__*/function (_AuthPiece) {
         style: theme.section
       }, /*#__PURE__*/_react["default"].createElement(_reactNative.View, null, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.Header, {
         theme: theme,
-        id: _AmplifyTestIDs["default"].AUTH.VERIFY_CONTACT_TEXT
+        testID: _AmplifyTestIDs["default"].AUTH.VERIFY_CONTACT_TEXT
       }, _awsAmplify.I18n.get('Verify Contact')), !this.state.verifyAttr && this.verifyBody(theme), this.state.verifyAttr && this.submitBody(theme), /*#__PURE__*/_react["default"].createElement(_reactNative.View, {
         style: theme.sectionFooter
       }, /*#__PURE__*/_react["default"].createElement(_AmplifyUI.LinkCell, {
@@ -227,7 +227,7 @@ var VerifyContact = /*#__PURE__*/function (_AuthPiece) {
         onPress: function onPress() {
           return _this6.changeState('signedIn');
         },
-        id: _AmplifyTestIDs["default"].AUTH.SKIP_BUTTON
+        testID: _AmplifyTestIDs["default"].AUTH.SKIP_BUTTON
       }, _awsAmplify.I18n.get('Skip'))), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.ErrorRow, {
         theme: theme
       }, this.state.error)), /*#__PURE__*/_react["default"].createElement(_AmplifyUI.SignedOutMessage, this.props)));
